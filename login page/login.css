@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e0e7ff;
+}
+.login {
+  background: linear-gradient(to right, #dbeafe, #f0f9ff);
+  padding: 60px 20px;
+}
+.register {
+  background: linear-gradient(to right, #dbeafe, #f0f9ff);
+  padding: 60px 20px;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.image-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-container {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  text-align: center;
+}
+.form-header {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #1e3a8a; 
+  text-align: center;
+}
+.form-subtext {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: auto;
+}
+
+button {
+  padding: 15px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+.text-center a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.text-center a:hover {
+  text-decoration: underline;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+
+.error {
+  color: #ff4d4f;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.form-message {
+  margin-top: 8px;
+  font-weight: 500;
+}

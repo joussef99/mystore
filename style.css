@@ -1,0 +1,111 @@
+.body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav-link {
+  position: relative;
+  color: #555;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #0d6efd;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #0d6efd;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+  width: 50%;
+}
+
+.cart-btn:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.badge {
+  font-size: 0.7rem;
+}
+
+/* Footer  */
+.footer-link {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #0d6efd;
+}
+
+.social-link {
+  color: #adb5bd;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-link:hover {
+  color: #0d6efd;
+  transform: translateY(-2px);
+}
+
+.site-footer h5, .site-footer h6 {
+  color: #fff;
+}
+
+.site-footer p {
+  color: #adb5bd;
+}
+
+.site-footer hr {
+  border-top-width: 1px;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99; /* on top of other content */
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  outline: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+  display: none; /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #0d6efd40;
+}
+
+#backToTop i {
+  pointer-events: none; /* click passes through to button */
+}

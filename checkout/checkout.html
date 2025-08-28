@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Checkout</h1>
+
+    <div class="order-summary" id="orderSummary"></div>
+
+    <form id="checkoutForm">
+      <input type="text" id="fullName" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="address" placeholder="Shipping Address" required>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <input type="text" id="city" placeholder="City" required>
+        <input type="text" id="zip" placeholder="ZIP Code" required>
+      </div>
+      <select id="payment" required>
+        <option value="" disabled selected>Select Payment Method</option>
+        <option value="cod">Cash on Delivery</option>
+        <option value="card">Credit/Debit Card</option>
+      </select>
+      <button type="submit" class="btn-primary" >Place Order</button>
+    </form>
+
+    <div class="success-msg" id="successMsg" style="display:none;">
+      ✅ Thank you! Your order has been placed.
+    </div>
+  </div>
+
+<script src="checkout.js"></script>
+</body>
+</html>

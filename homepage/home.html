@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyStore</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top custom-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#">
+          <i class="bi bi-shop me-2"></i>MyStore
+        </a>
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto gap-lg-4 text-center">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="#">Pricing</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-3 align-items-center mt-3 mt-lg-0">
+            <button
+              type="button"
+              id = "cartLink"
+              class="btn btn-outline-primary position-relative rounded-pill px-4 py-2 cart-btn"
+            >
+              <i class="bi bi-cart-fill me-1"></i> Cart
+              <span
+                id="cart-count"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shadow-sm"
+                >0</span
+              >
+            </button>
+            <button
+              type="button"
+              id="reset-cart"
+              class="btn btn-primary rounded-pill px-4 py-2"
+            >
+              Log out
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero d-flex align-items-center text-center text-white">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-3">
+          Welcome to <span class="text-primary">MyStore</span>
+        </h1>
+        <p class="lead mb-4">
+          Discover your favorite products at <strong>unbeatable prices</strong>
+        </p>
+        <a href="#prod" class="btn btn-primary btn-lg px-4 shadow-sm">
+          <i class="bi bi-cart-fill me-2"></i> Shop Now
+        </a>
+      </div>
+    </header>
+
+    <!-- slider -->
+    <section class="slider-section mb-5">
+      <div class="slider-container" id="slider">
+        <a class="prev" aria-label="Previous slide">
+          <i class="bi bi-chevron-left"></i>
+        </a>
+        <a class="next" aria-label="Next slide">
+          <i class="bi bi-chevron-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Product List -->
+    <section id="prod" class="container my-5">
+      <h2 class="section-title text-center">Featured Products</h2>
+
+      <div class="container my-4">
+        <div class="row g-3 justify-content-center">
+          <!-- Category Filter -->
+          <div class="col-md-4">
+            <label
+              for="category-filter"
+              class="form-label fw-semibold text-primary"
+              >Category</label
+            >
+            <select id="category-filter" class="form-select shadow-sm">
+              <option value="all">All Categories</option>
+              <option value="men">Men</option>
+              <option value="women">Women</option>
+              <option value="kid">Kids</option>
+            </select>
+          </div>
+
+          <!-- Price Filter -->
+          <div class="col-md-4">
+            <label
+              for="price-filter"
+              class="form-label fw-semibold text-primary"
+              >Price Range</label
+            >
+            <select id="price-filter" class="form-select shadow-sm">
+              <option value="">All Prices</option>
+              <option value="0-20">$0 - $20</option>
+              <option value="20-50">$20 - $50</option>
+              <option value="50-100">$50 - $100</option>
+              <option value="100+">$100+</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div id="product-list" class="row g-4">
+        <!-- Products will be injected here -->
+      </div>
+    </section>
+    <button id="backToTop" title="Go to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-dark text-white pt-5 pb-4 mt-5">
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <!-- Brand -->
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase fw-bold mb-3">MyStore</h5>
+            <p class="small text-muted">
+              Your go‑to destination for premium products and exceptional
+              service.
+            </p>
+          </div>
+
+          <!-- Links -->
+          <div class="col-md-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-3">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Home</a></li>
+              <li><a href="#" class="footer-link">Shop</a></li>
+              <li><a href="#" class="footer-link">About Us</a></li>
+              <li><a href="#" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-md-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-3">Support</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#" class="footer-link">Returns</a></li>
+              <li><a href="#" class="footer-link">Shipping</a></li>
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Social -->
+          <div class="col-md-3 mb-4 text-center text-md-start">
+            <h6 class="text-uppercase fw-bold mb-3">Follow Us</h6>
+            <div
+              class="d-flex justify-content-center justify-content-md-start gap-3"
+            >
+              <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="mt-4 mb-3 border-secondary" />
+
+        <!-- Bottom Note -->
+        <div class="text-center small">
+          © 2025 <span class="fw-semibold">MyStore</span>. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="../shared.js" type="module"></script>
+    <script src="home.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

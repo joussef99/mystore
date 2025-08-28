@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": 1,  
+      "type": "Suit",
+      "description": "Classic cotton suit with a tailored fit.",
+      "price": 199.99,
+      "img": "../imgs/men1.png",
+      "category": "Men"
+    },
+    {
+      "id": 2,
+      "type": "T-shirt",
+      "description": "Slim-fit stretch cotton t-shirt in dark wash.",
+      "price": 49.99,
+      "img": "../imgs/men2.png",
+      "category": "Men"
+    },
+    {
+      "id": 3,
+      "type": "Jacket",
+      "description": "Lightweight breathable jacket with cushioned soles.",
+      "price": 99.99,
+      "img": "../imgs/men3.png",
+      "category": "Men"
+    },
+    {
+      "id": 4,
+      "type": "Coat",
+      "description": "Fleece-lined zip-up coat for all-day comfort.",
+      "price": 59.99,
+      "img": "../imgs/women1.png",
+      "category": "Women"
+    },
+    {
+      "id": 5,
+      "type": "Jacket",
+      "description": "Floral print summer jacket with adjustable straps.",
+      "price": 74.99,
+      "img": "../imgs/women2.png",
+      "category": "Women"
+    },
+    {
+      "id": 6,
+      "type": "Dress",
+      "description": "Open-toe leather sandals with cushioned footbed.",
+      "price": 229.99,
+      "img": "../imgs/women3.png",
+      "category": "Women"
+    },
+    {
+      "id": 7,
+      "type": "T-shirt",
+      "description": "Water-resistant windbreaker T-shirt with hood.",
+      "price": 39.99,
+      "img": "../imgs/men4.png",
+      "category": "Men"
+    },
+    {
+      "id": 8,
+      "type": "Suit",
+      "description": "Light chiffon blouse with button-up front.",
+      "price": 134.99,
+      "img": "../imgs/women4.png",
+      "category": "Women"
+    },
+    {
+      "id": 9,
+      "type": "Shirt",
+      "description": "Adjustable shirt with embroidered logo.",
+      "price": 14.99,
+      "img": "../imgs/men5.png",
+      "category": "Men"
+    },
+    {
+      "id": 10,
+      "type": "sleepwear",
+      "description": "Casual cargo shorts with multiple pockets.",
+      "price": 24.99,
+      "img": "../imgs/kid1.png",
+      "category": "Kid"
+    },
+    {
+      "id": 11,
+      "type": "Hat",
+      "description": "High-waist stretch leggings for active wear.",
+      "price": 22.99,
+      "img": "../imgs/women5.png",
+      "category": "Women"
+    },
+    {
+      "id": 12,
+      "type": "T-shirt",
+      "description": "Knitted winter T-shirt for warmth and style.",
+      "price": 12.99,
+      "img": "../imgs/kid2.png",
+      "category": "Kid"
+    },
+    {
+      "id": 13,
+      "type": "Skirt",
+      "description": "A-line midi skirt in soft cotton fabric.",
+      "price": 29.99,
+      "img": "../imgs/women6.png",
+      "category": "Women"
+    },
+    {
+      "id": 14,
+      "type": "Suit",
+      "description": "Leather ankle boots with sturdy sole.",
+      "price": 79.99,
+      "img": "../imgs/Men6.png",
+      "category": "Men"
+    },
+    {
+      "id": 15,
+      "type": "Jacket",
+      "description": "Slim-fit polo shirt in breathable pique cotton.",
+      "price": 27.99,
+      "img": "../imgs/kid3.png",
+      "category": "kid"
+    },
+    {
+      "id": 16,
+      "type": "Dress",
+      "description": "Soft knit dress with front buttons.",
+      "price": 36.99,
+      "img": "../imgs/kid4.png",
+      "category": "kid"
+    },
+    {
+      "id": 17,
+      "type": "Tracksuit",
+      "description": "Lightweight patterned tracksuit for all seasons.",
+      "price": 15.99,
+      "img": "../imgs/kid5.png",
+      "category": "Kid"
+    },
+    {
+      "id": 18,
+      "type": "Dress",
+      "description": "Matching dress set with athletic fit.",
+      "price": 64.99,
+      "img": "../imgs/kid6.png",
+      "category": "Kid"
+    }
+  ]
+}

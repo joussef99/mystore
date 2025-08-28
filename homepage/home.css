@@ -1,0 +1,131 @@
+.body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url("../imgs/background.png") center/cover no-repeat;
+  min-height: 100vh;
+}
+
+.hero h1 span {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero .btn-primary {
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: #0d6efd;
+  transform: translateY(-3px);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.form-select {
+  border-radius: 0.5rem;
+  padding: 0.65rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem #0d6efd40;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+/* slider */
+/* === Slider Container === */
+.slider-container {
+  position: relative;
+  max-width: 80%;
+  margin: 100px auto 0;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background: #000; 
+}
+
+/* === Slides === */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === Caption Overlay === */
+.slide-caption {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Keep your existing slider styles ... */
+
+/* Navigation buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;          /* icon color */
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* big, comfy hit area */
+  width: 48px;
+  height: 48px;
+}
+
+.prev { left: 40px; }   /* increase spacing from center */
+.next { right: 40px; }
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Icon size */
+.prev i,
+.next i {
+  font-size: 28px;      /* make the arrows bigger */
+  line-height: 1;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <!-- login page -->
+    <section class="login">
+      <div class="container">
+        <div class="image-container">
+          <img src="../imgs/login.jpg" alt="logo" />
+        </div>
+        <div class="form-container">
+          <h1>Login</h1>
+          <h2 class="form-header">Welcome Back</h2>
+          <!-- LOGIN FORM -->
+          <form id="loginForm">
+            <label for="logNameId">Username</label>
+            <input type="text" id="logNameId" name="username" required />
+            <div class="error" id="loginNameError"></div>
+
+            <label for="logPassID">Password</label>
+            <input type="password" id="logPassID" name="password" required />
+            <div class="error" id="loginError"></div>
+
+            <!-- No anchor, direct JS redirect -->
+            <button type="button" id="loginBtn">Login</button>
+            <div id="formMessage" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <p>
+          Create your own account
+          <a href="#register"><strong>Register</strong></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- registration -->
+    <section class="register">
+      <div class="container">
+        <div class="form-container">
+          <h1>Create your own account</h1>
+          <p class="form-subtext">Welcome on the x family</p>
+          <!-- REGISTER FORM -->
+          <form id="registerForm">
+          <label for="regNameId">Username</label>
+          <input type="text" id="regNameId" name="username" required />
+          <div class="error" id="regNameError"></div>
+
+          <label for="regEmailId">Email</label>
+          <input type="email" id="regEmailId" name="email" required />
+          <div class="error" id="regEmailError"></div>
+
+          <label for="regPassId">Password</label>
+          <input type="password" id="regPassId" name="password" required />
+          <div class="error" id="regPassError"></div>
+
+          <label for="confirmPassId">Confirm Password</label>
+          <input type="password" id="confirmPassId" name="confirmPassword" required />
+          <div class="error" id="confirmPassError"></div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="terms" required />
+            <label for="terms">I agree to the terms and conditions</label>
+          </div>
+          <div class="error" id="termsError"></div>
+
+          <button type="button" id="registerBtn">Register</button>
+        </form>
+        </div>
+        <div class="image-container">
+          <img src="../imgs/login.jpg" alt="logo" />
+        </div>
+      </div>
+
+      <div class="text-center">
+        <p>
+          do you have an account? <a href="#login"><strong>Login</strong></a>
+        </p>
+      </div>
+    </section>
+
+    <script src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
